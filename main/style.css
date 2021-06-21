@@ -1,0 +1,264 @@
+.container{
+    max-width: 100%;
+    margin: 0px auto;
+padding: 0px 10px;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+.header:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #010a01;
+}
+
+
+
+.header span {
+    position: absolute;
+    display: block;
+}
+
+.header span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, #7e0b48);
+}
+.header:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+.header span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg, transparent, #7e0b48);
+}
+.header:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+
+
+.wrapper{
+position: relative;
+display: flex;
+justify-content: space-between;
+height: 80px;
+align-items: center;
+}
+
+
+.main_nav{
+    display: flex;
+    position: relative;
+    }
+    .main_nav li{
+        list-style: none;
+        margin: 0px 60px 0px 40px;
+    }
+    .current{
+        color: #fff;
+        text-transform: uppercase;
+        font-style: 20px;
+        text-decoration: none;
+    }
+
+    
+    .header_logo{
+        font-family: "Vibur", cursive;
+        margin: 0px 60px 0px 40px;
+        font-size: 4rem;
+        font-style: inherit;
+
+    }
+
+
+.block{
+    padding: 80px 0 0 ;
+}
+
+img {
+    display: flex;
+    width: 300px;
+    height: 250px;
+    margin-right: 15px;
+    float: left;
+    object-fit: cover;
+    border: 1px solid #000;
+  }
+
+/* flex-контейнер */
+.block__row{
+
+border: 10px solid #ece89d;
+display:flex;
+flex-direction:column;
+height: 100%;
+justify-content: space-between;
+
+}
+
+/* flex-элемент */
+.block__element{
+    margin-left: auto;
+    margin-right: auto;
+width: 50%;
+
+border: 5px solid #5e5373;
+padding: 20px;
+}
+
+.block__element h1, p{
+    margin-left: 15px;
+    display: block;
+    margin: 2px 0 0 0;
+}
+/*section {
+    float: left;
+    width: 35%;
+  }
+  aside {
+    float: right;
+    width: 63%;
+  }*/
+
+/* flex-элемент №1 */
+.block__element_1{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.block__element_1 img{
+/*margin-top: auto;
+margin-bottom: auto;
+    max-width: 100%;
+    display: flex;
+    object-fit: cover;*/
+}
+
+
+
+.see_more {
+    margin: 20px 0 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: consolas;
+}
+
+.see_more a {
+    position: relative;
+    display: inline-block;
+    padding: 12px 25px;
+    color: #18b555;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.see_more a:hover {
+    color: #18b555;
+    background: #b51829;
+    box-shadow: 0 0 10px #18b555, 0 0 40px #18b555, 0 0 80px #18b555;
+    transition-delay: 1s;
+}
+
+.see_more a span {
+    position: absolute;
+    display: block;
+}
+
+.see_more a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #18b555);
+}
+.see_more a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+.see_more a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #18b555);
+}
+.see_more a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+.see_more a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #18b555);
+}
+.see_more a:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+.see_more a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #18b555);
+}
+.see_more a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+
+/* flex-элемент №2 */
+.block__element_2{
+
+}
+
+.block__element_2 img{
+    /*max-width: 100%;
+    display: flex;*/
+}
+/* flex-элемент №3 */
+.block__element_3{
+
+}
+.block__element_3 img{
+  /*object-fit: cover;
+    /*max-width: 100%;
+    display: flex;
+    object-fit: cover;*/
+}
+/* контент */
+.block__content{
+
+background-color: #18b5a4;
+/* плюс прочие стили для текста, отступы */
+}
